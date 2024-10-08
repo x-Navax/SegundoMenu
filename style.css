@@ -149,3 +149,11 @@ section {
 .active {
     max-height: 500px; /* Ajusta este valor según el contenido */
 }
+.redes{
+    text-align: center;
+    margin-top: -15px;
+}
+.redes span a img {
+    width: 5rem;
+    padding: 10px;    
+}
