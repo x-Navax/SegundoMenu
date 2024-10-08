@@ -1,0 +1,150 @@
+/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playwrite DE Grund", cursive;
+    background-color: #dbffb099;
+    color: #000000;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h2 {
+    cursor: pointer;
+    color: #000000;
+    font-size: 1.6em;
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 img {
+    width: 10%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 15px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #30363d;
+}
+
+
+
+span {
+    font-size: 2rem;
+    color: #000000;
+   
+}
+
+/* Nueva clase para la descripción */
+/* .descripcion {
+    margin-top: 5px;
+    color: #8b949e;
+    font-size: 0.9em;
+    text-align: left;
+} */
+
+/* Alineación de imagen en p */
+#nescafe {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.nombreImg {
+    display: block;
+    margin: 0 auto 20px;
+    width: 60%;
+    max-width: 200px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-image: url("./imagenes/fondoVerde.png");
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-attachment: fixed;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Diseño responsivo */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    p {
+        
+        flex-direction: column; /* Los elementos se apilan en móviles */
+        align-items: flex-start;
+    }
+
+    .precio {
+        font-size: 1.1em;
+    }
+
+    .nombreImg {
+        width: 70%;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    p {
+        align-items: flex-start;
+    }
+
+    .precio {
+        margin-top: 14px;
+        font-size: 1rem;
+    }
+
+    section {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    h2 img {
+        width: 15%;
+        height: auto;
+    }
+}
+
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.active {
+    max-height: 500px; /* Ajusta este valor según el contenido */
+}
