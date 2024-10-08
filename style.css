@@ -138,6 +138,13 @@ section {
         width: 15%;
         height: auto;
     }
+    h2:focus,
+    h2:active {
+    outline: none;
+    }
+    *:focus {
+    outline: none;
+    }
 }
 
 
@@ -157,3 +164,17 @@ section {
     width: 5rem;
     padding: 10px;    
 }
+
+h2:focus,
+h2:active {
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+@media (max-width: 768px) {
+    *:focus {
+        outline: none;
+    }
+}
+
